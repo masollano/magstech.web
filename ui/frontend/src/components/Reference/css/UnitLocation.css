@@ -1,0 +1,31 @@
+.location-container {
+  width: 50%;
+  box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+  margin-bottom: 1rem;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  border-top: 3px solid #007bff;
+  padding: 10px;
+}
+.top-container{
+  display: flex;
+}
+
+.top-container .form-group{
+  width: 100%;
+  display: flex;
+}
+
+h3{
+  width: 100%;
+  text-align: center;
+}

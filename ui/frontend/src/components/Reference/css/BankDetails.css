@@ -1,0 +1,60 @@
+.Bank-container {
+    width: 100%;
+    box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
+    margin-bottom: 1rem;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    border-top: 3px solid #007bff;
+    padding: 5px;
+  }
+  .top-container{
+    display: flex;
+  }
+  
+  .top-container .form-group{
+    width: 100%;
+    display: flex;
+  }
+  
+  h3{
+    width: 100%;
+    text-align: center;
+  }
+
+  .Bank-content{
+    padding: 5px;
+    display: flex;
+}
+
+.rows{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    border:1px solid #dee2e6;  
+    border-radius: 5px;
+}
+
+.form-group.bank{
+    width: 100%;
+}
+
+.modalBank{
+    width: 40%;
+}
+
+input,select,textarea{
+  background-color: #fff !important;
+}
