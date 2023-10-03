@@ -29,7 +29,7 @@ jobs:
         run: |
           cd ui/v3
           npm install
-          ng build
+          nom run build --if-present
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
