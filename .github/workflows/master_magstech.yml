@@ -22,16 +22,21 @@ jobs:
           node-version: '18.x'
 
       - name: npm install, build, and test
+        # run: |
+          # cd ui/frontend
+          # npm install
+          # npm run build --if-present
         run: |
-          cd ui/frontend
+          cd ui/v3
           npm install
-          npm run build --if-present
+          ng build
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: ui/frontend/build
+          # path: ui/frontend/build
+          path: ui/v3/dist
 
   deploy:
     runs-on: ubuntu-latest
