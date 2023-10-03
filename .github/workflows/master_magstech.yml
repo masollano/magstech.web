@@ -36,7 +36,7 @@ jobs:
         with:
           name: node-app
           # path: ui/frontend/build
-          path: ui/v3/dist
+          path: ui/v3/dist/v3
 
   deploy:
     runs-on: ubuntu-latest
