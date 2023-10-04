@@ -22,15 +22,14 @@ jobs:
           php-version: '8.1'
 
       - name: Check if composer.json exists
-        run: |
-          cd api/magstech.api
-          
+        working-directory: api/magstech.api
         id: check_files
         uses: andstor/file-existence-action@v1
         with:
           files: 'composer.json'
 
       - name: Run composer install if composer.json exists
+        working-directory: api/magstech.api
         if: steps.check_files.outputs.files_exists == 'true'
         run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
 
