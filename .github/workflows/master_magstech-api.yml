@@ -22,6 +22,8 @@ jobs:
           php-version: '8.1'
 
       - name: Check if composer.json exists
+        run: |
+          cd api/magstech.api
         id: check_files
         uses: andstor/file-existence-action@v1
         with:
@@ -29,9 +31,7 @@ jobs:
 
       - name: Run composer install if composer.json exists
         if: steps.check_files.outputs.files_exists == 'true'
-        run: |
-          cd api/magstech.api
-          composer validate --no-check-publish && composer install --prefer-dist --no-progress
+        run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
