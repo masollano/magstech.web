@@ -22,9 +22,9 @@ jobs:
           php-version: '8.1'
 
       - name: Check if composer.json exists
-        working-directory: api/magstech.api
         id: check_files
         uses: andstor/file-existence-action@v1
+        working-directory: api/magstech.api
         with:
           files: 'composer.json'
 
